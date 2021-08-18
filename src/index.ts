@@ -10,7 +10,15 @@ const MyComponent = function (options) {
 (window as any).loadSvelteElement = function (container, props) {
     new (MyComponent as any)({
         target: container,
-        props
+        props: {
+            paymentMethodsConfiguration: {
+                boletobancario: {
+                    personalDetailsRequired: true,
+                    billingAddressRequired: false,
+                    showEmailAddress: true, 
+                }
+            }
+        }
     });
 }
 

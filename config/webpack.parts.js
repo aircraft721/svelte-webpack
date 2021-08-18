@@ -19,7 +19,7 @@ exports.devServer = () => ({
   watch: true,
   plugins: [
     new WebpackPluginServe({
-      port: 3000,
+      port: 3003,
       static: path.resolve(process.cwd(), 'dist'),
       historyFallback: true
     })
@@ -69,6 +69,12 @@ exports.page = ({ title }) => ({
                         });
                     </script>
                 </body>
+                <style>
+                    #local-payment-wrapper {
+                        display: flex;
+                        justify-content: center;
+                    }
+                </style>
                 </html>`
             ;
         }

@@ -4,10 +4,8 @@ const {Client, Config, CheckoutAPI} = require('@adyen/api-library');
 const { uuid } = require("uuidv4");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const { merchantAccount, apiKey } = require('./secret');
 
-
-const apiKey = "AQErhmfxLY7JbhZEw0m/n3Q5qf3VZo5eHYFPS3ZZC48v5c/dWKPWIGXf31YKrhDBXVsNvuR83LVYjEgiTGAH-B1dXJeTnNXcZ2+jRPjdcNOFweumzwnFv0Eaja5eX1RU=-tJ84Crr4I47KVgBh";
-const merchantAccount = "NespressoKR";
 
 dotenv.config({
     path: "./.env",

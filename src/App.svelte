@@ -1,15 +1,16 @@
 <script lang="ts">
     import AdyenDropin from './AdyenDropin.svelte'
+
+    export let paymentMethodsConfiguration;
+
 </script>
 
 <div class="container">
-    hello
-    <AdyenDropin />
+    <AdyenDropin paymentMethodsConfiguration={paymentMethodsConfiguration} />
 </div>
 
 <style>
     .container {
-        background: green;
-        color: white;
+        width: 50%;
     }
 </style>
